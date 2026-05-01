@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Contact Us</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+    <header>
+        <a href="index.html"><img src="multimedia/logo.svg" alt="Discover Hong Kong"></a>
+        <!--<h1>Welcome to Hong Kong</h1>
+        <svg width="150" height="90" xmlns="http://www.w3.org/2000/svg">
+            <rect width="100%" height="100%" rx="20" ry="20" fill="yellow" />
+            <circle cx="75" cy="45" r="40" fill="lightblue" />
+            <text x="75" y="35" font-family="Lucida Handwriting" font-size="20" text-anchor="middle" fill="red">Discover</text>
+            <text x="75" y="65" font-family="Lucida Handwriting" font-size="20" text-anchor="middle" fill="red">Hong Kong</text>
+        </svg>
+        -->
+        <nav>
+            <ul>
+              <li><a href="index.html">Main</a></li>
+              <li><a href="hkisland.html">Hong Kong Island</a></li>
+              <li><a href="kowloon.html">Kowloon</a></li>
+              <li><a href="lantau.html">Lantau Island</a></li>
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+      <h2>Contact Us</h2>
+      <h3>General Enquiry</h3>
+      <p>Phone: 2345-9876</p>
+      <p>Email: info@discoverhk.com</p>
+      <h3>Address: </h3>
+      <p>3/F to 6/F, 10 Siu Sai Wan Road, Chai Wan, Hong Kong</p>
+      <h3>Office hours:</h3>
+      <p>Monday - Friday : 9:00am to 6:00pm</p>
+      <p>Closed on Saturdays, Sundays and Public Holidays</p>
+
+      <hr>
+      <h2>Online Travel Survey</h2>
+      <form action="autoreply.jsp" method="post" name="form1" target="_blank" id="form1" title="Survey">
+      <!--
+      <form action="z_html_formReply.html" method="get" name="form1" target="_blank" id="form1" title="Survey">
+      <form action="z_html_formReply_get.jsp" method="get" target="_blank">
+      -->
+        <label for="">Lastname:<br>
+          <input type="text" name="lastname" id="" required placeholder="Input your lastname here" maxlength="30"
+          autofocus title="At least 3 letters">
+        </label><br><br>
+
+        <label for="">Firstname:<br>
+          <input type="text" name="firstname" id="" required>
+        </label><br><br>
+
+        <label for="">Email:<br>
+          <input type="email" name="email" id="" required >
+        </label><br><br>
+
+        <label for="gd">Gender:<br> 
+          <input type="radio" name="gender" id="gd" value="Male"> Male 
+          <input type="radio" name="gender" id="gd" value="Female"> Female 
+        </label><br><br>
+
+        <label for="dest">Which of the following regions you want to travel next time?<br>
+          <input type="checkbox" name="travelPlace1" id="dest" value="Asia">Asia<br>
+          <input type="checkbox" name="travelPlace2" id="dest" value="Europe">Europe<br>
+          <input type="checkbox" name="travelPlace3" id="dest" value="Africa">Africa<br>
+          <input type="checkbox" name="travelPlace4" id="dest" value="North America">North America<br>
+          <input type="checkbox" name="travelPlace5" id="dest" value="Latin America">Latin America
+        </label><br><br>
+
+        <label for="sugg">Comments or suggestion:<br>
+          <textarea name="suggestion" id="sugg" rows="15" cols="80" placeholder="Please input your comments or suggestion here."></textarea>
+        </label><br><br>
+
+        <input type="submit" value="submit">
+        <input type="reset" value="reset">
+      </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Discover Hong Kong</p>
+    </footer>
+</body>
+</html>
+
+
+<!--
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault();
+      alert("Thank you for your feedback!");
+    }
+  </script>
+
+  <h2>Contact Us</h2>
+  <form onsubmit="handleSubmit(event)">
+      <label for="name">Name:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
+      
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+      
+      <label for="message">Message:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+      
+      <button type="submit">Submit</button>
+  </form>
+</main>
+
+-->

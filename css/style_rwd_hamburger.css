@@ -1,0 +1,114 @@
+body {
+  font-family: Arial, sans-serif;     /* 設定字型為 Arial，若無則使用 sans-serif 類型 */
+  margin: 0;                          /* 移除預設外邊距 */
+  padding: 0;                         /* 移除預設內邊距 */
+  background: #f5f5f5;              /* 設定背景色為淡灰色 */
+  color: #333;                      /* 設定文字顏色為深灰色 */
+}
+
+header, nav, footer {
+  background-color: #78d2fc;        /* 設定背景色為亮藍色 */
+  color: white;                     /* 設定文字顏色為白色 */
+  padding: 1em;                       /* 內邊距為 1em，讓內容不貼邊 */
+  text-align: center;                 /* 文字置中對齊 */
+}
+
+nav ul {
+  list-style: none;                   /* 移除項目前的圓點或其他符號 */
+  padding: 0;                         /* 移除內邊距 */
+}
+
+nav ul li {
+  display: inline;                    /* 讓列表項目橫向排列 */
+  margin: 0 1em;                      /* 左右間距為 1em，讓項目之間有空隙 */
+}
+
+main {
+  padding: 2em;                       /* 內邊距為 2em，讓內容有空間 */
+  background: white;                /* 背景色為白色 */
+  margin: 1em;                        /* 外邊距為 1em，與其他元素保持距離 */
+  border-radius: 8px;                 /* 圓角邊框，讓區塊更柔和 */
+}
+
+.gallery {
+  display: flex;                      /* 使用 Flexbox 排列子元素 */
+  justify-content: space-between;     /* 子元素之間平均分配空間 */
+  gap: 1em;                           /* 元素之間的間距為 1em */
+  flex-wrap: wrap;                    /* 若空間不足，允許元素換行 */
+  margin-top: 1.5em;                  /* 與上方元素保持距離 */
+}
+
+.gallery figure {
+  flex: 1;                            /* 每個 figure 元素平均分配空間 */
+  text-align: center;                 /* 內容置中對齊 */
+}
+
+.gallery img {
+  width: 100%;                        /* 圖片寬度填滿容器 */
+  height: auto;                       /* 高度自動調整，保持比例 */
+  border-radius: 15px;                /* 圓角圖片，讓視覺更柔和 */
+}
+
+.gallery figcaption {
+  margin-top: 0.5em;                  /* 與圖片保持一點距離 */
+  font-size: 0.9em;                   /* 字體稍微縮小 */
+  color: #555;                      /* 使用較淡的灰色，避免搶眼 */
+}
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #78d2fc;
+    padding: 1em;
+    margin-top: 1em;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+  .gallery {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .gallery figure {
+    flex: none;
+    width: 100%;
+  }
+
+  main {
+    margin: 0.5em;
+    padding: 1em;
+  }
+}
+
+/*
+@media (max-width: 768px) {
+  nav ul li {
+    display: block;
+    margin: 0.5em 0;
+  }
+
+}
+*/
